@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Hi, Kotlin</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/wx.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section style="margin-top:2%" data-markdown>
+                    <script type="text/template">
+                        <span style="font-size:80px">Assignment2 Presentation</span>
+
+                        <small>
+                            <a href="https://mrfu.me/">Yuan Fu</a> /
+                            <a href="https://github.com/mrfufufu">@MrFuFuFu</a>
+                        </small>
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                    <span style="font-size:80px">Part 1</span>
+
+                    <span style="font-size:50px">List the new technologies I have learned</span>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-1-info-bezier.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-2-extension-tintColor.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-3-savePhoto.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-4-doWell.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-5-imprvePart.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-6-alert.png"/>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/part1-7-lifecycle.png"/>
+                    </script>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+                <section data-markdown>
+                    <script type="text/template" data-transition="zoom">
+                    <span style="font-size:80px">Part 2</span>
+
+                    <span style="font-size:50px">Summarise Swift syntax</span>
+                    </script>
+                </section>
+
+
+                <section style="margin-top:2%" data-markdown>
+                    <script type="text/template">
+                        <span style="font-size:85px">Swift, Java and Kotlin</span>
+
+                        <small>
+                            <a href="https://mrfu.me/">Yuan Fu</a> /
+                            <a href="https://github.com/mrfufufu">@MrFuFuFu</a>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                    <span style="font-size:80px">What’s the *Kotlin*?</span>
+
+                    <span style="font-size:25px">Statically typed programming language for modern multiplatform applications</span>
+                    <!-- .element: class="fragment" -->
+
+                    <span style="font-size:20px">100% interoperable with Java™ and Android™ (Now official on Android)</span>
+                    <!-- .element: class="fragment" -->
+
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        print("Hello, world!")
+                        var myVariable = 42
+                        let myConstant = 42
+                        let explicitDouble: Double = 70
+                        ```
+
+                        Java
+                        ```Java
+                        System.out.print("Hello, world!");
+                        int myVariable = 42;
+                        final int myConstant = 42;
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        println("Hello, world!")
+                        var myVariable = 42
+                        val myConstant = 42
+                        val explicitDouble: Double = 70.0
+                        ```
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        let names = ["Anna", "Alex", "Brian", "Jack"]
+                        let count = names.count
+                        for i in 0..<count {
+                            print("Person \(i + 1) is called \(names[i])")
+                        }
+                        ```
+
+                        Java
+                        ```Java
+                        String[] names = new String[] { "Anna", "Alex", "Brian", "Jack" };
+                        for (String name : names) {
+                            System.out.print(name);
+                        }
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        val names = arrayOf("Anna", "Alex", "Brian", "Jack")
+                        val count = names.count()
+                        for (i in 0..count - 1) {
+                            println("Person ${i + 1} is called ${names[i]}")
+                        }
+                        ```
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Now everybody use *Functional approach* to do the same things in one call
+                        
+
+                        <img src="attach/forSample.png"/>
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        let mixedArray = ["Anna", "Alex", "Brian", "Jack"]
+                        let results = mixedArray
+                            .filter({ (obj) -> Bool in return Int(obj) != nil })
+                            .map { (obj) -> Int in return Int(obj)! }
+                            .reduce(0, +)
+                        ```
+
+                        Java
+                        ```Java
+                        String[] mixedArray = new String[] { "4", "5", "a", "-2", "Str" };
+                        int results = 0;//Actually, we can use RxJava to implement it.
+                        for (String element : mixedArray) {
+                            results += Integer.parseInt(element);}
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        val mixedArray = arrayOf("Anna", "Alex", "Brian", "Jack")
+                        val results = mixedArray
+                            .filter { obj -> obj.toIntOrNull() != null }
+                            .map { x -> x.toInt() }
+                            .reduce { acc, x -> acc + x }
+                        ```
+                    </script>
+                </section>
+
+
+                <section data-markdown data-transition="zoom">
+                    <script type="text/template">
+                        *Closure* / *Anonymous Classes* / *Lambda*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        { _ in
+                            print("Closure is called!")
+                        }
+                        ```
+
+                        Java
+                        ```Java
+                        (new CallbackClass() {
+                            @Override public void call() {
+                                Log.i(StaticTag, "Callback is called");
+                            }
+                        });//Java 8 also support Lambda, It is same with Kotlin syntax.
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        {
+                            println("lambda is called!")
+                        }
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        <span style="font-size:50px">*Functions* and *Tuple Return*</span>
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        func greet(_ name: String, _ day: String) -> (Double, Double, Double) {
+                            return (3.59, 3.69, 3.79)
+                        }
+                        greet("Bob", "Tuesday")
+                        ```
+
+                        Java
+                        ```Java
+                        private String greet(String name, String day){
+                            return name + day;//Java only receive one field for return
+                            //You can define a class or array to return multi data
+                        }
+                        greet("Bob", "Tuesday");
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        data class GasPrices(val a: Double, val b: Double, val c: Double)
+                        fun greet(name: String, day: String) = GasPrices(3.59, 3.69, 3.79)
+                        greet("Bob", "Tuesday")
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="zoom">
+                    <script type="text/template">
+                        <span style="font-size:50px">*Named Arguments*</span>
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        func area(width: Int, height: Int) -> Int {
+                            return width * height
+                        }
+                        area(width: 2, height: 3)
+                        ```
+
+                        Java
+                        ```Java
+                        private int area(int width, int height) {
+                            return width * height;
+                        }
+                        area(2, 3);
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        fun area(width: Int, height: Int) = width * height
+                        area(width = 2, height = 3)
+                        // This is also possible with named arguments
+                        area(2, height = 2)
+                        area(height = 3, width = 2)//switch arguments order
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="zoom">
+                    <script type="text/template">
+                        <span style="font-size:50px">*CLASSES Usage*</span>
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        var shape = Shape()
+                        shape.numberOfSides = 7
+                        var shapeDescription = shape.simpleDescription()
+                        ```
+
+                        Java
+                        ```Java
+                        Shape shape = new Shape();
+                        shape.numberOfSides = 7;
+                        String shapeDescription = shape.simpleDescription()
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        var shape = Shape()
+                        shape.numberOfSides = 7
+                        var shapeDescription = shape.simpleDescription()
+                        ```
+                    </script>
+                </section>
+
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        <span style="font-size:50px">*Protocol* / *Interface*</span>
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        protocol Nameable { func name() -> String }
+                        func f<T: Nameable>(x: T) {
+                            print("Name is " + x.name())
+                        }
+                        ```
+
+                        Java
+                        ```Java
+                        public interface Nameable { public void name(); }
+                        public void f(){
+                            new Nameable(){
+                                public void name(){} //TODO
+                            }
+                        }
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        interface Nameable { fun name(): String }
+                        fun f<T: Nameable>(x: T) {
+                            println("Name is " + x.name())
+                        }
+                        ```
+                    </script>
+                </section>
+
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        <span style="font-size:50px">*Extensions*</span>
+                    </script>
+                </section>
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        Swift
+                        ```Swift
+                        extension Double {
+                            var mm: Double { return self / 1_000.0 }
+                            var ft: Double { return self / 3.28084 }
+                        }
+                        let oneInch = 25.4.mm
+                        print("One inch is \(oneInch) meters")
+                        // prints "One inch is 0.0254 meters"
+                        let threeFeet = 3.ft
+                        print("Three feet is \(threeFeet) meters")// prints "Three feet is 0.914399970739201 meters"
+                        ```
+
+                        Kotlin
+                        ```Kotlin
+                        val Double.mm: Double get() = this / 1000
+                        val Double.ft: Double get() = this / 3.28084
+
+                        val oneInch = 25.4.mm
+                        println("One inch is $oneInch meters")
+                        // prints "One inch is 0.0254 meters"
+                        val threeFeet = 3.0.ft
+                        println("Three feet is $threeFeet meters")// prints "Three feet is 0.914399970739201 meters"
+                        ```
+                    </script>
+                </section>
+
+
+
+                <section data-markdown data-transition="convex">
+                    <script type="text/template">
+                        <span style="font-size:80px">*One More Thing*</span>
+                    </script>
+                </section>
+
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        NullPointerException
+
+                        ```java
+                        public void test(String string) {//Java
+                            if (string != null && string != "") {
+                                char[] chars = string.toCharArray();
+                                if (chars.length > 10) {
+                                    System.out.println(((Character)chars[10]).hashCode());
+                                }
+                            }
+                        }
+                        ```
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown data-background="attach/bm_1.jpg"
+                    style="background:rgba(0,0,0,0.8)">
+                    <script type="text/template">
+                        ## *OMG  !!!!!*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        NullPointerException
+
+                        ```java
+                        fun demo() {//Kotlin
+                            val string1: String = "string1"
+                            val string2: String? = null
+                            val string3: String? = "string3"
+
+                            println(string1.length)
+                            println(string2?.length)
+                            println(string3?.length)
+                        }
+                        //output result are:
+                        //7
+                        //null
+                        //7
+                        ```
+
+                        ```java
+                        val a: A? = A()
+                        println(a?.b?.c)
+                        ```
+                        <!-- .element: class="fragment" -->
+
+                        We don’t care what kind of data which is return from server.
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Last but not least
+                        
+                        ### *Life is short, use Swift*
+                        <!-- .element: class="fragment" -->
+                        #### *人生苦短，我用 Swift*
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # *Question*
+
+                        Hey, don’t be shy.
+
+                    </script>
+                </section>
+
+                <section style="text-align: left;">
+                    <h1>THE END</h1>
+
+                    <h5>Yuan Fu</h5>
+                    <small>
+                        <a href="http://mrfu.me">Blog</a> /
+                        <a href="https://github.com/MrFuFuFu">GitHub</a>
+                    </small>
+                    <p/>
+
+                    <h6 style="padding-top: 150px;">Thanks</h6>
+                    <small>
+                        <a href="http://nilhcem.com/swift-is-like-kotlin/">Swift is like Kotlin</a> <p/>
+                        <a href="https://medium.com/@andycherkashyn/kotlin-and-swift-is-it-a-new-mobile-development-era-b4c5e81feb08">Kotlin and Swift. Is it a whole new era in Mobile Development?</a> <p/>
+                        <a href="https://mrfu.me/2017/06/01/kotlin-keynote/">Kotlin-keynote - Yuan Fu</a> <p/>
+                    </small>
+                </section>
+            </div>
+        </div>
+
+        <pre style="display:none"><code> force highlight.js work </code></pre>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            function codeEditor(){
+                var nodes = document.querySelectorAll("code");
+                for (var i = 0; i < nodes.length; i++) {
+                    nodes[i].setAttribute("contenteditable", '');
+                }
+                console.log('code editable now.');
+            }
+            window.codeEditor = codeEditor;
+
+            document.addEventListener('DOMContentLoaded', function(){
+                setTimeout(function(){
+                    codeEditor();
+                },1000)
+            })
+        </script>
+    </body>
+</html>
